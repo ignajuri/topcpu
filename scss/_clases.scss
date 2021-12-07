@@ -1,0 +1,125 @@
+.bg-grad-uno {
+  background-image: $grad-uno;
+  font-family: $font-first;
+}
+
+.text-pro {
+  color: $color-dos;
+}
+
+.link-pro {
+  color: $color-uno;
+  text-decoration: none;
+}
+
+.textUs {
+  font-family: $font-first;
+  text-align: center;
+}
+
+.news {
+  &:hover {
+    transform: translate(10px, 10px);
+  }
+}
+
+.news__1 {
+  &:hover {
+    transform: translate(10px, 10px);
+  }
+}
+
+.servicios_2 {
+  grid-area: servicios_2;
+  align-self: center;
+  justify-self: center;
+}
+
+.tabla_sugerencias {
+  grid-area: tabla_sugerencias;
+  align-self: center;
+  justify-self: center;
+}
+
+.contactForm {
+  color: $color-dos;
+  font-family: $font-first;
+  width: fit-content;
+  margin-left: $margen-20;
+  margin-bottom: $margen-20/2;
+  overflow: hidden;
+  background-image: $img-fondo;
+}
+
+.ideaForm {
+  font-family: $font-first;
+  width: fit-content;
+  overflow: hidden;
+  background-image: $img-fondo;
+}
+
+.tittle {
+  color: $color-dos;
+  font-family: $font-first;
+  display: flex;
+  animation-duration: 5s;
+  animation-name: aparecer;
+  animation-iteration-count: infinite;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.one {
+  color: $color-dos;
+  font-family: $font-first;
+  margin-left: $margen-20/2;
+}
+
+.two {
+  font-family: $font-first;
+  margin-left: $margen-20/2;
+}
+
+.listIntel {
+  color: $color-intel;
+  font-family: $font-first;
+  list-style: none;
+  text-decoration: none;
+}
+
+.list__intel {
+  list-style: square;
+}
+
+.listAmd {
+  color: $color-amd;
+  font-family: $font-first;
+  list-style: none;
+  text-decoration: none;
+}
+
+.list__amd {
+  list-style: square;
+}
+
+.comentList {
+  font-family: $font-first;
+  margin-left: $margen-20/2;
+  margin-bottom: $margen-20/2;
+}
+
+@mixin sizes($width, $height) {
+  height: $height;
+  width: $width;
+}
+
+.map_box {
+  @include sizes(500px, 500px);
+}

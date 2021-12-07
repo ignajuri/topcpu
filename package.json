@@ -1,0 +1,14 @@
+{
+  "name": "topcpu",
+  "version": "1.0.0",
+  "description": "mi proyecto sobre mi sitio web de topcpu",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch scss/estilo.scss css/estilo.css"
+  },
+  "author": "Ignacio Juri",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}
